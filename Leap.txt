@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int year,day,month;
+	cout<<"Year :";cin>>year;
+	cout<<"Month :";cin>>month;
+	cout<<"Year :";cin>>day;
+	if(year%4==0)
+	{
+		if(year%100!=0||year%400==0)
+		{
+			cout<<"Leap year";
+		}
+		else
+		{
+			cout<<"Not a leap year";
+		}
+	}
+	else
+	{
+		cout<<"Not a leap year";
+	}
+}
